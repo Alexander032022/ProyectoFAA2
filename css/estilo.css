@@ -42,9 +42,12 @@
         .articulos{
             background: #4e4e6a;
             flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
         }
             .son-articulo{
                 background: #1f6cb0;
+                flex: 1 1 40%;
             }
         .aside{
             background: #f73f52;
@@ -59,3 +62,18 @@
         .pie{
             background: #eccd2e;
         }
+
+@media all and (max-width:800px){
+    .seccion{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+}    
+@media all and (max-width:600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
