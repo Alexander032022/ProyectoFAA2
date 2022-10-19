@@ -1,57 +1,106 @@
 *{
-    margin: 10px;
+    margin: 0px;
     padding: 10px;
     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
 }
 .contenedor-padre{
     display: flex;
     flex-flow: column nowrap;
 }
     .cabecera{
-        background-color: #000;
+        background: url(../imagenes/fondo.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: contain;
         display: flex;
         flex-flow: column nowrap;
     }
         .menu{
-            background: #2d4059;
+            background: rgba(0,0,0,0,3);
             display: flex;
             height: 100px;
             flex-flow: row nowrap;
             align-items: center;
         }
             .logo{
-                background: #ea5455;
                 flex: 1 1 auto;
             }
+                .logo a{
+                    color: #fff;
+                    font-size: 30px;
+                }
+                .logo a:hover{
+                    color: #ffd460;
+                }
             .nav{
-                background: #ea5455;
                 flex: 5 1 auto;
             }
+                .nav a{
+                    color: #fff;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover{
+                    color: #000;
+                }
             .rsocial{
-                background: #ea5455;
                 flex: 1 1 auto;
             }
         .texto-principal{
-            background: #f07b3f;            
+             height: 580px;
+             display: flex; 
+             align-items: center;  
         }
+            h1{
+                font-size: 21px;
+                color: #fff;
+                font-weight: 300;
+                text-align: center;
+                line-height: 2;
+
+            }
+
     .seccion{
         background: #000;
         display: flex;
         flex-flow: row nowrap;
     }
         .articulos{
-            background: #4e4e6a;
+            /*background: #4e4e6a;*/
             flex: 2 1 auto;
+            font-size: 13px;
+            letter-spacing: 1px;
+
             display: flex;
             flex-flow: row wrap;
+        }
+        h3{
+            color: #fff;
+            padding:10px 0 ;
+        }
+        h2{
+            font-size: 25px;
+            text-transform: uppercase;
+            color: #fff;
         }
             .son-articulo{
                 background: #1f6cb0;
                 flex: 1 1 40%;
             }
+                .son-articulo img{
+                    width: 100%;
+                }
         .aside{
             background: #f73f52;
             flex: 1 1 auto;
+        }
+        .aside img{
+            width: 100%;
         }
             .publicidad{
                 background: #ffea85;
